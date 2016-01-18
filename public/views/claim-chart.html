@@ -1,0 +1,33 @@
+<div class="row">
+    <div class="row">
+        <div class="col-sm-3">
+            <h3><span class="label label-default"><i class="fa fa-area-chart"></i>&nbsp;&nbsp;Claim Status Chart</span></h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <select ng-init="searchClientId = ''" class="form-control" id="searchClient" placeholder="Insurance Name"
+                    ng-model="searchClientId" ng-change="updateClientId(searchClientId)" ng-options="client.value as client.name for client in clients">
+            </select>
+        </div>
+        <div class="col-sm-6">
+            <div class="btn-group">
+                <label class="btn btn-default" ng-class="{'active': dataRange==0}">
+                    <input type="radio" name="dataRangeRadio" ng-click="dataRangeChange(0)" ng-model="dataRange" value="0"> Days
+                </label>
+                <label class="btn btn-default" ng-class="{'active': dataRange==1}">
+                    <input type="radio" name="dataRangeRadio" ng-click="dataRangeChange(1)" ng-model="dataRange" value="1"> Weeks
+                </label>
+                <label class="btn btn-default" ng-class="{'active': dataRange==2}">
+                    <input type="radio" name="dataRangeRadio" ng-click="dataRangeChange(2)" ng-model="dataRange" value="2"> Months
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <canvas id="line" class="chart chart-line" chart-data="data"
+            chart-labels="labels" chart-legend="true" chart-series="series"
+            chart-click="onClick" >
+    </canvas>
+</div>

@@ -1,0 +1,28 @@
+<div class="row sidebar-module" ng-class="issueBackground">
+    <ul class="list-group" >
+        <li class="list-group-item" ng-class="issueBackground">
+            <center>
+            <strong>
+                <i class="fa fa-exclamation-circle"></i>
+                <span>ISSUE RESOLUTION</span>
+            </strong>
+            </center>
+        </li>
+        <div class="floatleft">
+        <span ng-class ="issueBackground">
+            Total Commerror Count:
+            <b class="badge">{{totalCommerrorCount}}</b>
+        </span>
+        </br>
+        <span ng-class ="issueBackground">
+            In Status 5 > 24 Hours:
+            <b class="badge">{{claimsInStatusFive}}</b>
+        </span>      
+        </div>
+        <div class="floatright">
+        <span class="list-group-item big-num" ng-class="issueBackground">
+           {{totalCommerrorCount}}
+        </span>
+       </div>
+    </ul>
+</div>

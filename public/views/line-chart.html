@@ -1,0 +1,12 @@
+<div ng-include="'views/nav.html'"></div>
+<div class="container">
+    <!--
+    <canvas id="line" class="chart chart-bar" chart-data="data"
+            chart-labels="labels" chart-legend="true" chart-series="series"
+            chart-click="onClick" >
+    </canvas>
+    -->
+    <canvas id="bar" class="chart chart-bar" data="medal_data" labels="medal_ticks"
+            colours="medals_colours"></canvas>
+</div>
+<div ng-include="'views/footer.html'"></div>

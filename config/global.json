@@ -1,0 +1,15 @@
+{
+    "applications": {
+        "(DEV_QA)GTD Support": {
+            "applicationId": "h5jdeXjmjfrDEbx8SDASEo1u3qSoW7kuYtzhPXM8",
+            "masterKey": "yWsrZB6g1u55hwdACmn5WhNTfVkQaNf7sIdzUiOr"
+        },
+        "(PROD)GTD Support": {
+            "applicationId": "nVhaYVUzWmQ0iq8DI7r09zjdbgxvhoAjEtVsfPbn",
+            "masterKey": "o1ertvS6Zd3nb98veFGe1sAh55ifEJb7l4h3MD1Q"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.2.12"
+    }
+}
