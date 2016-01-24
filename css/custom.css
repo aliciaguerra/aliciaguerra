@@ -21,7 +21,7 @@ body.nav-sm .navbar.nav_title a span {
 }
 
 body.nav-sm .navbar.nav_title a i {
-    font-size: 27px;
+    text-size: 27px;
     margin: 13px 0 0 3px;
 }
 
@@ -151,7 +151,7 @@ body.nav-sm .profile {
 }
 
 .profile.img_2 .profile_pic .img-circle.profile_img {
-    width: 50%;
+    width: 20%;
     margin: 10px 0 0;
 }
 
